@@ -26,8 +26,8 @@ Sigue estos pasos para instalar y ejecutar la aplicación:
 Clona el repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tuusuario/btg-fondos-voluntarios.git
-cd btg-fondos-voluntarios
+git clone https://github.com/Juanparro95/btg-pactual-test.git
+cd btg-pactual-test
 ```
 
 ### 2. Crear Base de Datos en MongoDB
@@ -43,20 +43,15 @@ use btgdb
 
 Asegúrate de configurar las siguientes variables de entorno para conectar con MongoDB y para el envío de correos electrónicos:
 
-SPRING_DATASOURCE_URL: URL de conexión a MongoDB.
-MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD: Configuración del servidor SMTP.
+Ingresa a backend/src/main/resources/application.properties para ver la configuración
 
-```bash
-export SPRING_DATASOURCE_URL=mongodb://localhost:27017/btg_fondos
-export MAIL_HOST=smtp.example.com
-export MAIL_PORT=587
-export MAIL_USERNAME=tuemail@example.com
-export MAIL_PASSWORD=tucontraseña
-```
+**NOTA:** He dejado una clave temporal para el envio de emails, se que es inseguro, pero es solo para este test.
 
 ### 4. Ejecutar el Proyecto
 
 Una vez configuradas las variables de entorno, puedes proceder a construir y ejecutar la aplicación:
+
+*Dentro de la carpeta backend ejecuta los siguientes comandos*
 
 ```bash
 ./mvnw clean install
@@ -64,6 +59,8 @@ Una vez configuradas las variables de entorno, puedes proceder a construir y eje
 ```
 
 La aplicación backend estará disponible en http://localhost:8081.
+
+Para ver la documentación de swagger, ingresa a: http://localhost:8081/swagger-ui/index.html
 
 Funcionalidades del Proyecto
 

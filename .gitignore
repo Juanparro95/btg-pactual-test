@@ -1,0 +1,79 @@
+
+# Backend
+
+/backend/HELP.md
+/backend/target/
+/backend/!.mvn/wrapper/maven-wrapper.jar
+/backend/!**/src/main/**/target/
+/backend/!**/src/test/**/target/
+
+### STS ###
+/backend/.apt_generated
+/backend/.classpath
+/backend/.factorypath
+/backend/.project
+/backend/.settings
+/backend/.springBeans
+/backend/.sts4-cache
+
+### IntelliJ IDEA ###
+/backend/.idea
+/backend/*.iws
+/backend/*.iml
+/backend/*.ipr
+
+### NetBeans ###
+/backend/nbproject/private/
+/backend/nbbuild/
+/backend/dist/
+/backend/nbdist/
+/backend/.nb-gradle/
+/backend/build/
+/backend/!**/src/main/**/build/
+/backend/!**/src/test/**/build/
+
+### VS Code ###
+/backend/.vscode/
+
+
+# Frontend
+# Compiled output
+/btg-app/dist
+/btg-app/tmp
+/btg-app/out-tsc
+/btg-app/bazel-out
+
+# Node
+/btg-app/node_modules
+/btg-app/npm-debug.log
+/btg-app/yarn-error.log
+
+# IDEs and editors
+/btg-app/.idea/
+/btg-app/.project
+/btg-app/.classpath
+/btg-app/.c9/
+/btg-app/*.launch
+/btg-app/.settings/
+/btg-app/*.sublime-workspace
+
+# Visual Studio Code
+/btg-app/.vscode/*
+/btg-app/!.vscode/settings.json
+/btg-app/!.vscode/tasks.json
+/btg-app/!.vscode/launch.json
+/btg-app/!.vscode/extensions.json
+/btg-app/.history/*
+
+# Miscellaneous
+/btg-app/.angular/cache
+/btg-app/.sass-cache/
+/btg-app/connect.lock
+/btg-app/coverage
+/btg-app/libpeerconnection.log
+/btg-app/testem.log
+/btg-app/typings
+
+# System files
+/.DS_Store
+/Thumbs.db

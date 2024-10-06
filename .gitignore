@@ -38,41 +38,41 @@
 
 # Frontend
 # Compiled output
-/btg-app/dist
-/btg-app/tmp
-/btg-app/out-tsc
-/btg-app/bazel-out
+/frontend/dist
+/frontend/tmp
+/frontend/out-tsc
+/frontend/bazel-out
 
 # Node
-/btg-app/node_modules
-/btg-app/npm-debug.log
-/btg-app/yarn-error.log
+/frontend/node_modules
+/frontend/npm-debug.log
+/frontend/yarn-error.log
 
 # IDEs and editors
-/btg-app/.idea/
-/btg-app/.project
-/btg-app/.classpath
-/btg-app/.c9/
-/btg-app/*.launch
-/btg-app/.settings/
-/btg-app/*.sublime-workspace
+/frontend/.idea/
+/frontend/.project
+/frontend/.classpath
+/frontend/.c9/
+/frontend/*.launch
+/frontend/.settings/
+/frontend/*.sublime-workspace
 
 # Visual Studio Code
-/btg-app/.vscode/*
-/btg-app/!.vscode/settings.json
-/btg-app/!.vscode/tasks.json
-/btg-app/!.vscode/launch.json
-/btg-app/!.vscode/extensions.json
-/btg-app/.history/*
+/frontend/.vscode/*
+/frontend/!.vscode/settings.json
+/frontend/!.vscode/tasks.json
+/frontend/!.vscode/launch.json
+/frontend/!.vscode/extensions.json
+/frontend/.history/*
 
 # Miscellaneous
-/btg-app/.angular/cache
-/btg-app/.sass-cache/
-/btg-app/connect.lock
-/btg-app/coverage
-/btg-app/libpeerconnection.log
-/btg-app/testem.log
-/btg-app/typings
+/frontend/.angular/cache
+/frontend/.sass-cache/
+/frontend/connect.lock
+/frontend/coverage
+/frontend/libpeerconnection.log
+/frontend/testem.log
+/frontend/typings
 
 # System files
 /.DS_Store

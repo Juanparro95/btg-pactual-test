@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark" *ngIf="isLoggedIn">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://empresas.btgpactual.com.co/assets/img/auth/auth-btg-img-logo.svg" alt="BTG Pactual Logo" width="150">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" *ngIf="isLoggedIn">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/funds']">Fondos</a>
+        </li>
+      </ul>
+      <div class="navbar-text d-flex align-items-center">
+        <div class="dropdown">
+          <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <img [src]="avatarUrl" alt="Avatar" class="rounded-circle me-2" width="30" height="30">
+            {{ name }}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+            <li><a class="dropdown-item text-black" [routerLink]="['/transactions']">Transacciones</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-black" (click)="logout()">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div *ngIf="isLoggedIn; else simpleOutlet" class="app-container">
+  <div class="router-card shadow-lg p-4 mb-5 bg-white rounded">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<ng-template #simpleOutlet>
+  <router-outlet></router-outlet>
+</ng-template>
+
+
+
+<footer class="footer bg-dark text-white py-3 mt-auto" *ngIf="isLoggedIn">
+  <div class="container text-center">
+    <p>&copy; 2024 BTG Pactual. Todos los derechos reservados.</p>
+  </div>
+</footer>

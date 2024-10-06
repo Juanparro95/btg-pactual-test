@@ -1,0 +1,20 @@
+<div class="login-container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-5 rounded-lg">
+      <h2 class="login-title text-center mb-4">Iniciar Sesión</h2>
+  
+      <form (ngSubmit)="onSubmit()" class="login-form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input [(ngModel)]="name" name="name" type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input [(ngModel)]="email" name="email" type="email" id="email" class="form-control" placeholder="Tu correo electrónico" required>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100 py-2">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+  

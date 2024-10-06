@@ -4,7 +4,7 @@ Este proyecto es una plataforma desarrollada para la gestión de inversiones en 
 
 ## Requisitos Previos
 
-Asegúrate de cumplir con los siguientes requisitos antes de empezar:
+Antes de usar la plataforma, debes instalar las siguientes herramientas:
 
 1. **Java JDK 17**  
    [Descargar JDK 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
@@ -32,7 +32,7 @@ cd btg-pactual-test
 
 ### 2. Crear Base de Datos en MongoDB
 
-Inicia MongoDB y crea la base de datos llamada btgdb:
+Inicia MongoDB y crea la base de datos llamada btgdb, si te pide crear una collection, escribe funds
 
 ```bash
 mongo
@@ -51,7 +51,7 @@ Ingresa a backend/src/main/resources/application.properties para ver la configur
 
 ### 2. Ejecutar el Proyecto
 
-Una vez configuradas las variables de entorno, puedes proceder a construir y ejecutar la aplicación:
+Una vez configures las variables de entorno, puedes construir y ejecutar la aplicación:
 
 *Dentro de la carpeta backend ejecuta los siguientes comandos*
 
@@ -64,8 +64,6 @@ La aplicación backend estará disponible en http://localhost:8081.
 
 Para ver la documentación de swagger, ingresa a: http://localhost:8081/swagger-ui/index.html
 
-Funcionalidades del Proyecto
-
 ## Frontend
 
 ### 1. Instalar dependencias
@@ -77,6 +75,8 @@ ng serve -- Iniciar el proyecto de angular, por defecto el http://localhost:4200
 ```
 
 # **Tener en cuenta**
+
+Funcionalidades del Proyecto
 
 ### 1. Login (Sin Contraseña)
 El login no requiere de una contraseña. El único propósito del login es validar al usuario y enviarle una notificación al correo electrónico registrado.

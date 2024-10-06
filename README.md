@@ -39,7 +39,9 @@ mongo
 use btgdb
 ```
 
-### 3. Configuración de Variables de Entorno
+## Backend
+
+### 1. Configuración de Variables de Entorno
 
 Asegúrate de configurar las siguientes variables de entorno para conectar con MongoDB y para el envío de correos electrónicos:
 
@@ -47,7 +49,7 @@ Ingresa a backend/src/main/resources/application.properties para ver la configur
 
 **NOTA:** He dejado una clave temporal para el envio de emails, se que es inseguro, pero es solo para este test.
 
-### 4. Ejecutar el Proyecto
+### 2. Ejecutar el Proyecto
 
 Una vez configuradas las variables de entorno, puedes proceder a construir y ejecutar la aplicación:
 
@@ -63,6 +65,18 @@ La aplicación backend estará disponible en http://localhost:8081.
 Para ver la documentación de swagger, ingresa a: http://localhost:8081/swagger-ui/index.html
 
 Funcionalidades del Proyecto
+
+## Frontend
+
+### 1. Instalar dependencias
+
+```bash
+cd frontend -- Primero ingresa a la carpeta
+npm install -- Ejecuta este codigo para instalar las dependencias
+ng serve -- Iniciar el proyecto de angular, por defecto el http://localhost:4200
+```
+
+# **Tener en cuenta**
 
 ### 1. Login (Sin Contraseña)
 El login no requiere de una contraseña. El único propósito del login es validar al usuario y enviarle una notificación al correo electrónico registrado.
